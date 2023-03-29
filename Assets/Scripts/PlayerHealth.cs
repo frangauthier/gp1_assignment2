@@ -19,7 +19,13 @@ public class PlayerHealth : Health
         base.Die();
         anim.SetTrigger("Death");
         controller.Die();
+        Invoke("Dead", 2f);
         //Destroy(gameObject, 2);
+    }
+
+    public void Dead()
+    {
+        GameManager.PlayerIsDead();
     }
 
     public override void Hurt()

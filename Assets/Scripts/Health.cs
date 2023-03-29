@@ -41,6 +41,7 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        if (isDead) return;
         currentHealth -= damage;
         UpdateHealthBar();
         if (currentHealth <= 0)
@@ -58,7 +59,6 @@ public class Health : MonoBehaviour
 
     public virtual void Hurt()
     {
-        Debug.Log("Hurt parent");
     }
 
     public virtual void Die()

@@ -23,8 +23,6 @@ public class SwordDamage : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("HARM Player");
-
             Health health = other.gameObject.GetComponent<Health>();
             if (health != null && Time.time > nextDamage)
             {

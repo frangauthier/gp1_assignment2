@@ -20,7 +20,7 @@ public class HeroKnightController : MonoBehaviour
     private float m_delayToIdle = 0.0f;
     private float m_rollDuration = 8.0f / 14.0f;
     private float m_rollCurrentTime;
-    private bool m_isDead = false;
+    public bool m_isDead = false;
 
 
     // Use this for initialization

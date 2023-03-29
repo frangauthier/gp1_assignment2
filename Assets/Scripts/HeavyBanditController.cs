@@ -101,7 +101,6 @@ public class HeavyBanditController : MonoBehaviour
 
     public void Hurt()
     {
-        Debug.Log("Hurt bandit");
         m_animator.SetTrigger("Hurt");
     }
 
